@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Header from "./_components/header";
 import styles from "./layout.module.css"
 import Today from "./_components/today";
+import Footer from "./_components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
         <div className={styles.box} />
         <Today />
         {children}
+        <Footer/>
         </body>
     </html>
   );
