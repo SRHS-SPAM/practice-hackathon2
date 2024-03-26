@@ -32,3 +32,21 @@
 .today {
     background-color: blue;
 }
+.wrap {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px gray;
+
+}
+
+.daywrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.daywrap > div {
+    flex: 1;
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+}

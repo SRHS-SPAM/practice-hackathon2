@@ -22,6 +22,8 @@ const CalendarDate = ({
   date,
 }: CalendarDateProps) => {
   const Dates: DatesFace[][] = [];
+  const Days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+  const dummy = [0, 0, 0, 0, 0, 0, 0,0 ,0 ,0 ,0 ,0, 0];
   const preMonthDate = new Date(year, month, 0);
   const preMonthDay = preMonthDate.getDay();
   const lastDay = new Date(year, month + 1, 0).getDate();
@@ -65,6 +67,12 @@ const CalendarDate = ({
 
   return (
     <>
+    <div className={styles.wrap}>
+      <div className={styles.daywrap}>
+      {Days.map((ai, i) => (
+        <div key={i}>{ai}</div>
+      ))
+      }</div>
       {Dates.map((ai, i) => (
         <div
           key={i}
@@ -84,7 +92,7 @@ const CalendarDate = ({
             </Link>
           ))}
         </div>
-      ))}
+      ))}</div>
     </>
   );
 };
