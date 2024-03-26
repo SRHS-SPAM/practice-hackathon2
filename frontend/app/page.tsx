@@ -13,7 +13,9 @@ export default function Home() {
   const date = parseInt(params.get("date") || currentDate.getDate().toString() );
   return (
     <main className={styles.main}>
+      <div className={styles.wrap}>
       <Calendar month={month} year={year} date={date}/>
+      </div>
     </main>
   );
 }

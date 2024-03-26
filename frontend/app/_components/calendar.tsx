@@ -1,6 +1,7 @@
 import { RefObject, useEffect } from "react";
 import styles from "./calendar.module.css";
 import Link from "next/link";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 interface MoveYmdProps {
   y?: number;
   m?: number;
@@ -88,7 +89,13 @@ const CalendarDate = ({ year, month, date }: CalendarDateProps) => {
           ))}
         </div>
         <div className={styles.yearwrap}>
+          <Link href={getQueryString("pre", date)}>
+          <ChevronLeft className={styles.arrow}/>
+          </Link>
         {Months[month] + " " + year}
+        <Link href={getQueryString("nxt", date)}>
+        <ChevronRight className={styles.arrow}/>
+        </Link>
         </div>
         <div className={styles.daywrap}>
           {Days.map((ai, i) => (

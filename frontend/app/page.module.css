@@ -1,0 +1,9 @@
+.main {
+    padding: 0px 10px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    
+}
