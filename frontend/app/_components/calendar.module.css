@@ -33,15 +33,20 @@
     background-color: blue;
 }
 .wrap {
+    position: relative;
     background-color: #F2F2F2;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 3px 3px 3px gray;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .daywrap {
     display: flex;
     flex-direction: row;
+    margin: 15px 0px;
+    width: 100%;
 }
 
 .daywrap > div {
@@ -49,4 +54,26 @@
     text-align: center;
     color: gray;
     font-weight: bold;
+}
+
+.yearwrap {
+    display: flex;
+    justify-content:  space-around;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.deco {
+    position: absolute;
+    top: -10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.deco > div {
+    width: 10px;
+    height: 20px;
+    background-color: #7E7E7E;
 }
