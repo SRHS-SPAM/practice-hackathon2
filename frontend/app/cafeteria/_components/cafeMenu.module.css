@@ -1,0 +1,53 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.wrap > div {
+    display: flex;
+    justify-content: center;
+}
+.cafewrap {
+    align-items: stretch;
+    margin-bottom: 15px;
+}
+.child {
+    position: relative;
+    width: 250px;
+    height: 300px;
+}
+.arrow {
+    color: #030087;
+    height: 100%;
+}
+.arrowwrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.panewrap {
+    position: absolute;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.status {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+}
+
+.statuswrap {
+    display: flex;
+    gap: 8px;
+}
+
+.activestatus {
+    width: 40px;
+    background-color: #030087;
+}
