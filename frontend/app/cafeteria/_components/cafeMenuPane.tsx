@@ -1,5 +1,4 @@
 import styles from "./cafeMenuPane.module.css";
-
 interface CafeMenuPaneProps {
   title: string;
   data: string[];
